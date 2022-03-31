@@ -1,0 +1,17 @@
+1)To install Sass
+  npm install node-sass
+
+2)To install formik
+  npm install formik --save
+
+3)To install yup
+  npm install -S yup
+
+4)To install axios
+  npm install axios
+
+5)To install sweetalert
+  npm install sweetalert
+
+6)To install react-router-dom
+  npm install react-router-dom@5.2.0
