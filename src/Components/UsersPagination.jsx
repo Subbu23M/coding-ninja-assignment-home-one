@@ -60,7 +60,12 @@ const UsersPagination = () => {
                 <div className="row">
                     {
                         usersList.map((user) => {
-                            const{id,avatar,first_name,email} = user;
+                                    const {
+                                        id,
+                                        avatar,
+                                        first_name,
+                                        email
+                                    } = user;
                             return(
                                 <div className="col-lg-3 mb-2" key={id}>
                                     <div className="card  text-center p-2">

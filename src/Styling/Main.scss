@@ -2,6 +2,7 @@
 $fontFamily:'Roboto',
 sans-serif;
 $colorValue:gainsboro;
+$lightCoral:lightcoral;
 
 @mixin suedoSelectors {
     content: "";
@@ -26,21 +27,6 @@ li {
     list-style-type: none;
 }
 
-a {
-    font-size: 1.4rem;
-    cursor: pointer;
-    display: block;
-
-    // &:hover {
-    //     text-decoration: none;
-    //     color: lightcoral;
-    // }
-}
-
-.email {
-    font-size: 0.9rem;
-}
-
 nav {
     ul {
         text-align: center;
@@ -54,10 +40,13 @@ nav {
 
             a {
                 text-decoration: none;
+                font-size: 1.4rem;
+                cursor: pointer;
+                display: block;
 
                 &:hover {
                     text-decoration: underline;
-                    color: lightcoral;
+                    color: $lightCoral;
                 }
             }
         }
@@ -119,4 +108,8 @@ nav {
             top: 8px;
         }
     }
+}
+
+.email {
+    font-size: 0.9rem;
 }

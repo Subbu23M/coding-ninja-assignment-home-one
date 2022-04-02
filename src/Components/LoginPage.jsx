@@ -97,7 +97,7 @@ const LoginPage = (props) => {
                         // Navigate user to Home Page
                         props.history.push('/');
 
-                        // Invoke function
+                        // Invoke callback function
                         props.handleLoginCallBackFunc();
                     }
                 })

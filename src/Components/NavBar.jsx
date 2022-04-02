@@ -1,8 +1,10 @@
 import HomePage from "./HomePage";
 import LoginPage from "./LoginPage";
 import UsersList from "./UsersList";
+import PageError from "./PageError";
 import { Link,Route,withRouter } from "react-router-dom";
 import swal from "sweetalert";
+import { Switch } from "react-router-dom";
 
 const NavBar = (props) => {
     const {
@@ -73,28 +75,35 @@ const NavBar = (props) => {
                 </ul>
             </nav>
 
-            <Route
-                path='/'
-                component={HomePage}
-                exact
-            />
-            <Route
-                path='/users'
-                component={UsersList}
-                exact
-            />
-            <Route
-                path='/login'
-                exact
-                render={(props) => {
-                    return(
-                        <LoginPage
-                            {...props}
-                            handleLoginCallBackFunc = {handleLoginCallBackFunc}
-                        />
-                    )
-                }}
-            />
+            <Switch>
+                <Route
+                    path='/'
+                    component={HomePage}
+                    exact
+                />
+                <Route
+                    path='/users'
+                    component={UsersList}
+                    exact
+                />
+                <Route
+                    path='/login'
+                    exact
+                    render={(props) => {
+                        return(
+                            <LoginPage
+                                {...props}
+                                handleLoginCallBackFunc = {handleLoginCallBackFunc}
+                            />
+                        )
+                    }}
+                />
+                <Route
+                    path='/*'
+                    component={PageError}
+                    exact
+                />
+            </Switch>
         </>
     )
 }
