@@ -1,3 +1,5 @@
+import UsersPagination from '../Components/UsersPagination';
+
 const UsersList = () => {
     return(
         <>
@@ -6,6 +8,8 @@ const UsersList = () => {
             >
                 Users List
             </h1>
+
+            <UsersPagination/>
         </>
     )
 }

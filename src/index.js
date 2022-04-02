@@ -13,6 +13,6 @@ const jsx = (
   </React.StrictMode>
 )
 
-// ReactDOM.render(
-//   jsx,rootElement
-// );
+ReactDOM.render(
+  jsx,rootElement
+);

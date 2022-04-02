@@ -23,7 +23,7 @@ const App = () => {
     return(
         <>
             <h3
-                className='text-dark ml-2 display-3 my-2'
+                className='text-dark ml-2 display-3 mt-1'
             >
                 design , <span className='text-danger'>string</span> 
             </h3>
