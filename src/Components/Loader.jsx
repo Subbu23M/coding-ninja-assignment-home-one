@@ -1,18 +1,14 @@
-import React from 'react';
-
-import spinner from './Assets/Spinner.gif';
+import spinner from '../Assets/Spinner.gif';
 
 // ES6-Arrow function
-const Loader = (props) => {
+const Loader = () => {
 
     return (
         <>
-
             <img 
                 src={spinner} 
                 alt="spinner" 
             />
-
         </>
     )
 }

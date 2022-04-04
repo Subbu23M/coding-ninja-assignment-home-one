@@ -7,7 +7,6 @@ const UsersList = () => {
             <HeaderTag
                 text='Users List'
             />
-            
             <UsersPagination/>
         </>
     )

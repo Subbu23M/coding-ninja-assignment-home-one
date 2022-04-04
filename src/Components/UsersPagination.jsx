@@ -2,13 +2,13 @@ import { useState,useEffect } from "react";
 import ReactPaginate from 'react-paginate';
 import axios from "axios";
 import swal from "sweetalert";
-import Loader from '../Loader';
+import Loader from '../Components/Loader';
 
 const UsersPagination = () => {
     const [usersList, setUsersList] = useState([]);
     const [isLoading, setIsLoading] = useState(true);
 
-    // Asynchronous operations
+    // Asynchronous nature
     const fetchData = () => {
         const baseURL = 'https://reqres.in/api/users?page=1';
 
@@ -67,7 +67,7 @@ const UsersPagination = () => {
                                         email
                                     } = user;
                             return(
-                                <div className="col-lg-3 mb-2" key={id}>
+                                <div className="col-lg-3 col-sm-6 mb-2" key={id}>
                                     <div className="card  text-center p-2">
                                         <img
                                             src={avatar}

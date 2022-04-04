@@ -2,9 +2,8 @@ import HomePage from "./HomePage";
 import LoginPage from "./LoginPage";
 import UsersList from "./UsersList";
 import PageError from "./PageError";
-import { Link,Route,withRouter } from "react-router-dom";
+import { Link,Route,withRouter,Switch } from "react-router-dom";
 import swal from "sweetalert";
-import { Switch } from "react-router-dom";
 
 const NavBar = (props) => {
     const {

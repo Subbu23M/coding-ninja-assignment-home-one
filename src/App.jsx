@@ -1,6 +1,7 @@
 import { useState,useEffect } from 'react';
 import NavBar from './Components/NavBar';
 import './Styling/Main.scss';
+import { Link} from 'react-router-dom';
 
 const App = () => {
     const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -20,13 +21,30 @@ const App = () => {
     // Invoke useEffect hook
     useEffect(useFunc, []);
 
+    const removeUnderline = {
+        textDecoration : 'none'
+    }
+
     return(
         <>
-            <h3
-                className='text-dark ml-2 display-3 mt-1'
+            <Link
+                to='/'
+                style={removeUnderline}
             >
-                design, <span className='text-danger'>string</span> 
-            </h3>
+                <h3
+                    className='text-dark ml-2 display-3 mt-1'
+                >
+                    design, <span className='text-danger'>string</span> 
+                </h3>
+            </Link>
+
+            {/* <Switch>
+                <Route
+                    path='/'
+                    component={HomePage}
+                    exact
+                />
+            </Switch> */}
 
             <NavBar
                 boolValue={isLoggedIn}
