@@ -4,12 +4,21 @@ import UsersList from "./UsersList";
 import PageError from "./PageError";
 import { Link,Route,withRouter,Switch } from "react-router-dom";
 import swal from "sweetalert";
+import ReactGA from 'react-ga4';
+import {useEffect} from 'react';
 
 const NavBar = (props) => {
     const {
         boolValue,
         handleLoginCallBackFunc
     } = props;
+
+    useEffect(() => {
+        ReactGA.initialize([{
+            trackingId:'G-DEL3Q75N95'
+        }])
+        ReactGA.send({hitType:'pageview',page:window.location.pathname})
+    },[]);
 
     const leftPart = (
         <>
