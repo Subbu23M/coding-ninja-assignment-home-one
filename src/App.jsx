@@ -12,14 +12,12 @@ const App = () => {
     }
 
     // To stop page reloading
-    const useFunc = () => {
+    // Invoke useEffect hook
+    useEffect(() => {
         if (localStorage.getItem('JWT_Token')) {
             handleLogin();
         }
-    }
-
-    // Invoke useEffect hook
-    useEffect(useFunc, []);
+    });
 
     const removeUnderline = {
         textDecoration : 'none'
