@@ -5,7 +5,6 @@ import PageError from "./PageError";
 import { Link,Route,withRouter,Switch } from "react-router-dom";
 import swal from "sweetalert";
 import ReactGA from 'react-ga4';
-import {useEffect} from 'react';
 
 const NavBar = (props) => {
     const {
@@ -13,13 +12,11 @@ const NavBar = (props) => {
         handleLoginCallBackFunc
     } = props;
 
-    useEffect(() => {
-        ReactGA.initialize([{
-            trackingId:'G-93QY6LSZGF',
-            gaOptions:{ 'cookieFlags': 'SameSite=None; Secure' }
-        }])
-        ReactGA.send({hitType:'pageview',page:window.location.pathname})
-    },[]);
+    ReactGA.initialize([{
+        trackingId:'G-93QY6LSZGF',
+        gaOptions:{ 'cookieFlags': 'SameSite=None; Secure' }
+    }])
+    ReactGA.send({hitType:'pageview',page:window.location.pathname})
 
     const leftPart = (
         <>
