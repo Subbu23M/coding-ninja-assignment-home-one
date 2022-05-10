@@ -15,7 +15,8 @@ const NavBar = (props) => {
 
     useEffect(() => {
         ReactGA.initialize([{
-            trackingId:'G-93QY6LSZGF'
+            trackingId:'G-93QY6LSZGF',
+            gaOptions:{ 'cookieFlags': 'SameSite=None; Secure' }
         }])
         ReactGA.send({hitType:'pageview',page:window.location.pathname})
     },[]);
