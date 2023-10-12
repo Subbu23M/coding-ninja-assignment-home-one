@@ -22,8 +22,8 @@ You can see the output: https://design-string-assignment-one.netlify.app/
 1. Login API - POST - https://reqres.in/api/login 
 
 _Sample Request_
-```
 **Login With these credentials**
+```
 {
     "email": "eve.holt@reqres.in",
     "password": "cityslicka"
