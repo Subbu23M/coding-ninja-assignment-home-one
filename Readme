@@ -1,4 +1,4 @@
-You can see the output : https://design-string-assignment-one.netlify.app/
+You can see the output: https://design-string-assignment-one.netlify.app/
 
 # Ninja React Coding Challenge
 
@@ -14,7 +14,7 @@ You can see the output : https://design-string-assignment-one.netlify.app/
 
 **Scope of work**
 - User should be able to successfully login using the email and password provided in the API details
-- After login user should land on the Home page and Users list shoudl be loaded from the Users List API  
+- After login user should land on the Home page and the Users list should be loaded from the Users List API  
 - Pagination is add on
 
 **API Details**
@@ -23,6 +23,7 @@ You can see the output : https://design-string-assignment-one.netlify.app/
 
 _Sample Request_
 ```
+**Login With these credentials**
 {
     "email": "eve.holt@reqres.in",
     "password": "cityslicka"
